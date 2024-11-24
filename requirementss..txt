@@ -4,4 +4,4 @@ pillow
 time
 tensorflow
 numpy
-tensorflow_hub
+tensorflow-hub
