@@ -116,8 +116,7 @@ def main():
 
 if __name__ == "__main__":
     # Google API setup
-    with open("gemini.txt") as f:
-        gemini_key = f.read()
+    gemini_key = "AIzaSyAwozLYn8tRSFY18TVTuV6uA0Q8fqdrCkI"
     genai.configure(api_key=gemini_key)
 
     main()  # Invoke main function
