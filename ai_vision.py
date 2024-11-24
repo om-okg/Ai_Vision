@@ -61,7 +61,7 @@ def object_detection(image):
     draw = ImageDraw.Draw(annotated_image)
 
     for i in range(len(boxes)):
-        if scores[i] > 0.25:  # Filter out low-confidence detections
+        if scores[i] > 0.30:  # Filter out low-confidence detections
             ymin, xmin, ymax, xmax = boxes[i]
             width, height = image.size
             (left, right, top, bottom) = (xmin * width, xmax * width, ymin * height, ymax * height)
