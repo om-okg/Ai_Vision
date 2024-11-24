@@ -65,7 +65,7 @@ The results will persist on the page until a new button is clicked.
 7. **Access the Application**:
     ```bash
     http://localhost:8501/
-
+    ```
     Here, you can interact with the application by uploading an image and choosing between the Scene Understanding and Object Detection features.
 
 
