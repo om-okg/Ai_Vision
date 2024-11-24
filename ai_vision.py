@@ -1,6 +1,5 @@
 import streamlit as st
 import google-generativeai as genai
-from langchain_google_genai import GoogleGenerativeAI
 from PIL import Image, ImageDraw
 import time
 import tensorflow as tf
