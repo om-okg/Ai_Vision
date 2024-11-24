@@ -33,3 +33,8 @@ The results will persist on the page until a new button is clicked.
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-repository-url.git
+   
+2. **Clone the Repository**:
+   ```bash
+   python -m venv venv
+
