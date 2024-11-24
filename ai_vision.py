@@ -1,7 +1,6 @@
 import streamlit as st
 import google.generativeai as genai
 from PIL import Image, ImageDraw
-import time
 import tensorflow as tf
 import numpy as np
 import tensorflow_hub as hub
