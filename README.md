@@ -1,24 +1,35 @@
-# Ai_Vision
-This project is a Streamlit-powered web application designed to perform Scene Understanding and Object Detection using advanced AI technologies:
+# AI Vision Application
 
-Features
-1. Real-Time Scene Understanding:
-Upload an image, and the application uses Google's Generative AI model (gemini-1.5-flash) to generate a descriptive textual output of the scene, helping users to understand the content effectively.
-This feature is ideal for applications where users need quick descriptions of images, such as for accessibility, content analysis, or educational purposes.
+This project is a Streamlit-powered web application that allows users to upload images and leverage **AI-based Scene Understanding** and **Object Detection** features. The application integrates Google's **Generative AI** for scene description and **TensorFlow's SSD MobileNet V2 model** for object detection. 
 
-2. Object Detection:
-The application utilizes the SSD MobileNet V2 model hosted on TensorFlow Hub for object detection in uploaded images.
-It automatically detects objects in the images (e.g., people, vehicles, animals, furniture) with high confidence scores, and highlights these objects using bounding boxes.
-Objects with a confidence score higher than 0.5 will be displayed along with their labels and scores.
+## Features
+1. **Real-Time Scene Understanding**:
+   - Upload an image to get a descriptive textual output using Google's **Generative AI** (`gemini-1.5-flash` model). 
+   - Ideal for understanding the content of images for accessibility, analysis, or educational purposes.
 
+2. **Object and Obstacle Detection**:
+   - Using **TensorFlow's SSD MobileNet V2** model, the app detects objects within the image (e.g., people, cars, animals, etc.) and highlights them with bounding boxes and labels.
+   - Objects are only shown if the model's confidence score is above 0.25.
 
-How It Works
-1. Upload Image: Users upload an image using the file uploader interface.
-2. Choose Function:
-    Click on "Real-Time Scene Understanding" to get a textual description of the scene using Google's Generative AI model.
-    Click on "Object and Obstacle Detection for Safe Navigation" to use the TensorFlow-based object detection model to identify and     highlight objects in the image.
-3. View Results: After selecting a feature, the corresponding result will be displayed on the page:
-    Scene Understanding results will appear in a text format.
-    Object Detection results will display the annotated image with detected objects highlighted with green bounding boxes, object labels, and confidence scores.
-4. Results Persistence: The results of the last action will remain visible until a new action is performed (i.e., until another button is clicked), helping users review the detected information without resetting the interface.
+## How It Works
+1. **Upload Image**: Users upload an image file (JPG, PNG, JPEG).
+2. **Choose Action**:
+   - **Scene Understanding**: Click on the "Real-Time Scene Understanding" button to get a textual description of the uploaded image.
+   - **Object Detection**: Click on the "Object and Obstacle Detection for Safe Navigation" button to get bounding boxes and labels for the objects detected in the image.
+3. **View Results**:
+   - **Scene Understanding**: A textual description is displayed.
+   - **Object Detection**: The image will be annotated with detected objects, their class IDs, and confidence scores.
 
+The results will persist on the page until a new button is clicked.
+
+## Installation
+
+### Requirements:
+- **Python 3.7+**
+- **Pip** for package installation.
+
+### Step-by-Step Instructions:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-repository-url.git
