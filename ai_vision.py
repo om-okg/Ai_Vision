@@ -116,7 +116,5 @@ def main():
 
 if __name__ == "__main__":
     # Google API setup
-    gemini_key = "AIzaSyAwozLYn8tRSFY18TVTuV6uA0Q8fqdrCkI"
-    genai.configure(api_key=gemini_key)
-
+    genai.configure(api_key="AIzaSyDxnP5VMe3fs932Fq77M1wu0sWu5XvDlbs")
     main()  # Invoke main function
